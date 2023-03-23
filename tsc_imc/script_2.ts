@@ -1,3 +1,11 @@
+/**
+ * Actividad repaso programación básica
+ * Habilidades Intermedias Desarrollo SW - Agencia Distrital Atenea
+ * Ejercicio 1: Presentar la condición de riesgo cardiovascular de un paciente según entradas
+ * @author Alejandro Ruiz Vallejo <ra.ruiz@uniandes.edu.co>
+ */
+
+
 var bodyMassIdx:number = 0;
 var outputMsg:string = "";
 enum riskCondition {
@@ -20,6 +28,6 @@ if (bodyMassIdx < 22.0 && age < 45) {
 	outputMsg = riskCondition.High;
 }	
 
-alert(`La condicion del paciente según su imc y edad es ${outputMsg}`);
+alert(`La condicion de riesgo del paciente según su imc y edad es ${outputMsg}`);
 
 
