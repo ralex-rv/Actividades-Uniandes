@@ -3,6 +3,7 @@
 
 import { Vehiculo } from "./Vehiculo.js"
 import { Persona } from "./Persona.js";
+import { Accidente } from "./Accidente";
     
 export class Motorizado extends Vehiculo
 {

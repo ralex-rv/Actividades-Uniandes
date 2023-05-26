@@ -29,12 +29,8 @@ export class Persona
 		this.vehiculos = [];
 		this.licenciaConduccion = licenciaConduccion;
 	}
-	// Implemented operations	
-	comprarVehiculo (elVehiculo: Vehiculo) {
-		this.vehiculos.push(elVehiculo);
-	}
-	
-	requerirPersona() {
+	// Implemented operations		
+	requerirPersona(): void{
 		console.log(`La autoridad de transito realiza requerimiento`);
 		this.licenciaConduccion.verificarLicencia();
 	}

@@ -4,14 +4,20 @@
 import { Accidente } from "./Accidente.js";
 import { Persona } from "./Persona.js";
 
-export class Vehiculo {
+export abstract class Vehiculo {
     // Attributes
 	private marca: string;
 	private modelo: string;
 	private color: string;
 	private ruedas: number;
-	private reportes: Array<Accidente>;
-	private propietario: Persona;
+	private reportes: Array<Accidente>;	
+	private _propietario: Persona;
+	public get propietario(): Persona {
+		return this._propietario;
+	}
+	public set propietario(value: Persona) {
+		this._propietario = value;
+	}
 
 	constructor (marca: string, modelo: string, color: string, ruedas: number, propietario: Persona ) {
 		this.marca = marca;
@@ -19,12 +25,13 @@ export class Vehiculo {
 		this.color = color;
 		this.ruedas = ruedas;
 		this.reportes = [];
-		this.propietario = propietario;		
+		this._propietario = propietario;		
 	}
 	
     // Implemented attributes
 	
     // Operations
+	abstract comprarVehiculo (elVehiculo: Vehiculo): void	
 	
 	// Implemented operations
 	

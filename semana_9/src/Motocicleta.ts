@@ -1,6 +1,7 @@
 
 /* Generated with GenMyModel */
 
+import { Accidente } from "./Accidente";
 import { Motorizado } from "./Motorizado.js";
 import { Persona } from "./Persona.js"; 
     

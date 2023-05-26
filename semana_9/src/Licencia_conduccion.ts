@@ -1,7 +1,7 @@
 
 /* Generated with GenMyModel */
 
-import { Persona } from "./Persona.js";
+//import { Persona } from "./Persona.js";
     
 export class Licencia_conduccion
 {
