@@ -15,7 +15,12 @@ export class Episode
 	
     // Implemented attributes	
     // Operations
-	constructor (episodeName: string, summary: string, duration: number, serieTV: SeriesTV) {
+	constructor (
+		episodeName: string = '',
+		summary: string = '',
+		duration: number = 0,
+		serieTV: SeriesTV = new SeriesTV()
+		) {
 		this.episodeName = episodeName;
 		this.summary = summary;
 		this.duration = duration;

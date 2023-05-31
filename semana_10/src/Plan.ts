@@ -15,7 +15,12 @@ export class Plan
 	
     // Implemented attributes	
     // Operations
-	constructor (cost: number, planName: string, description: string, streamPlatform: StreamPlatform) {
+	constructor (
+		cost: number = 0,
+		planName: string = '',
+		description: string = '',
+		streamPlatform : StreamPlatform = new StreamPlatform()
+		) {
 		this.cost = cost;
 		this.planName = planName;
 		this.description = description;
